@@ -1,0 +1,50 @@
+<!DOCTYPE HTML><head>
+<style>
+body {background-image:url('./blormbg.png'); height:97vh;}
+div {background-color:#fffc; border-radius:1rem; width:55%; height:95vh; margin:5px; padding:10px;}
+
+.strike {
+  position: relative;
+}
+.strike:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  -ms-transform:rotate(-3deg);
+  -o-transform:rotate(-3deg);
+  transform:rotate(-3deg);
+}
+</style><title>Blormfission Calculator v.0.01</title>
+</head><body>
+	<center>
+		<div>
+			<h3>Blormfission Calculator</h3>
+			<p style="font-size:24pt;">
+				<input id="blx" type="number" />
+				&nbsp;⩚&nbsp;
+				<input id="bly" type="number" /><br>
+				<button id="blorm">Blormfise!</button>
+			</p>
+			<p id="results">
+				Bare Fraction:<br>
+				Simplest Form:<br>
+				Decimal Form:
+			</p>
+			<details><summary>What is Blormfission?</summary>
+				<p>Blormfission is a math operator important in the field of grambulatorics. The operation is simple:
+				<br>Concatenate x and y, and then each digit in the sequence is subtracted by the corresponding digit in the reverse of the sequence shifted right 1. A lesser digit in the minuend is treated as though it has 10 added to it.
+				<br>The digits are joined back together and then the resulting number is divided by x + y.</p>
+				<p>For an example, see the image below:</p><img src="./blormExample.png" />
+				<p>Credit goes to M_rld on Discord for creating this awesome mathematical operation.
+			</details>
+		</div>
+	</center>
+<script src="./blorm.js"></script>
+</body>
