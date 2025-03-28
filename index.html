@@ -1,25 +1,10 @@
 <!DOCTYPE HTML><head>
 <style>
-body {background-image:url('./blormbg.png'); height:97vh;}
+body {background-image:url('./blormbg.png'); height:97vh; animation:ani0;}
 div {background-color:#fffc; border-radius:1rem; width:55%; height:95vh; margin:5px; padding:10px;}
-
-.strike {
-  position: relative;
-}
-.strike:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 50%;
-  right: 0;
-  border-top: 1px solid;
-  border-color: inherit;
-  
-  -webkit-transform:rotate(-3deg);
-  -moz-transform:rotate(-3deg);
-  -ms-transform:rotate(-3deg);
-  -o-transform:rotate(-3deg);
-  transform:rotate(-3deg);
+@keyframes ani0{
+from {background-position:top left;}
+to {background-position:bottom right;}
 }
 </style><title>Blormfission Calculator v.0.01</title>
 </head><body>
